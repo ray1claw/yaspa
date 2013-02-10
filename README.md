@@ -1,3 +1,7 @@
+# YASPA
+
+This is the development repo for YASPA(Yet Another SPA), a project to explore app development using AngularJS
+
 # Angular Express Seed
 
 Start an awesome app with AngularJS on the front, Express + Node on the back. This project is an
