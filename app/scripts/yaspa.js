@@ -1,12 +1,16 @@
 // This file contains custom javascript code for YASPA.
 
-$(function(){
-    $(form).ajaxSubmit({
-    url: '../php/contact.php',
-    success: function() {
-    $('#contact').hide();
-    $('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
-    }
-    });
-});         
+$(document).ready(function(){
+	$("#contact").submit(function() {
+		//Do the AJAX post
+		$.post("../php/contact.php", $("#contact").serialize(), function(data){
+			if (data == 1) {
+			  $("#contact").hide("slow");
+			  $("#contact-form").append("Thanks for contacting us. We will get back to you shortly").show("slow");
+			}
+		});
+		//Disable default POST.
+		return false;
+	});
+});    
 (jQuery)
