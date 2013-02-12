@@ -2,6 +2,67 @@
 @import "compass_twitter_bootstrap_responsive";
 // @import "compass_twitter_bootstrap_awesome";
 
+// Variables --
+
+$bgcolor: orange;
+$fontcolor: white;
+
+// Mixins --
+
+
+
+// Styles --
+
 body {
 	padding-top: 70px;
+
+	color: $fontcolor;
+	background: $bgcolor;
+
+	.navbar .brand {
+		float: right;
+	}
+
+	.page-controls {
+		.page-control {
+			@extend .carousel-control;
+			a {
+				color: $white;
+				&:hover { color: $white; text-decoration: none; }
+				&:visited { color: $white; }
+			}
+			&.left {
+				top: 100px;
+			}
+
+			&.right {
+				top: 50%;
+			}
+		}
+	}
+
+	img {
+		width: 500px;
+		height: 100px;
+		display: inline-block;
+		background: darken($bgcolor, 10%);
+		margin: 5px;
+	}
+
+	.sidebar-item {
+	}
+
+	footer {
+		margin-top: 70px;
+		.nav {
+			li {
+				a {
+					color: $fontcolor;
+					&:hover {
+						color: darken($fontcolor, 70%)
+					}
+				}
+			}
+		}
+	}
 }
