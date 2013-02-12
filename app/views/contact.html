@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="../scripts/yaspa.js"></script>
+</head>
+ 
+<body>
+ 
+<div id="contact-form">    
+ 
+<form id="contact" method="post" action="">
+<fieldset>    
+ 
+<label for="name">Name</label>
+<input type="text" name="name" placeholder="Full Name">
+ 
+<label for="email">E-mail</label>
+<input type="email" name="email" placeholder="name@domain.com">
+
+<label for="phone">Phone</label>
+<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
+ 
+<label for="website">Website</label>
+<input type="url" name="url" placeholder="http://">
+ 
+<label for="message">Question/Comment</label>
+<textarea name="message"></textarea>
+ 
+<input type="submit" name="submit" id="submit" value="Send Message" onclick="test()" />
+ 
+</fieldset>
+</form>
+ 
+</div>
+<!-- /end #contact-form -->
+ 
+</body>
+</html>
