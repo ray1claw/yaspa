@@ -6006,7 +6006,7 @@ a.label:hover, a.badge:hover {
 }
 
 /* line 70, ../../app/styles/compass_twitter_bootstrap/_carousel.scss */
-.carousel-control {
+.carousel-control, body .page-controls .page-control {
   position: absolute;
   top: 40%;
   left: 15px;
@@ -6027,12 +6027,12 @@ a.label:hover, a.badge:hover {
   filter: alpha(opacity=50);
 }
 /* line 95, ../../app/styles/compass_twitter_bootstrap/_carousel.scss */
-.carousel-control.right {
+.carousel-control.right, body .page-controls .right.page-control {
   left: auto;
   right: 15px;
 }
 /* line 101, ../../app/styles/compass_twitter_bootstrap/_carousel.scss */
-.carousel-control:hover {
+.carousel-control:hover, body .page-controls .page-control:hover {
   color: white;
   text-decoration: none;
   opacity: 0.9;
@@ -6233,13 +6233,6 @@ a.label:hover, a.badge:hover {
   body {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  /* line 15, ../../app/styles/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .navbar-fixed-top,
-  .navbar-fixed-bottom {
-    margin-left: -20px;
-    margin-right: -20px;
   }
 
   /* line 20, ../../app/styles/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -7522,7 +7515,54 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-/* line 5, ../../app/styles/main.scss */
+/* line 16, ../../app/styles/main.scss */
 body {
   padding-top: 70px;
+  color: white;
+  background: orange;
+}
+/* line 22, ../../app/styles/main.scss */
+body .navbar .brand {
+  float: right;
+}
+/* line 29, ../../app/styles/main.scss */
+body .page-controls .page-control a {
+  color: white;
+}
+/* line 31, ../../app/styles/main.scss */
+body .page-controls .page-control a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 32, ../../app/styles/main.scss */
+body .page-controls .page-control a:visited {
+  color: white;
+}
+/* line 34, ../../app/styles/main.scss */
+body .page-controls .page-control.left {
+  top: 100px;
+}
+/* line 38, ../../app/styles/main.scss */
+body .page-controls .page-control.right {
+  top: 50%;
+}
+/* line 44, ../../app/styles/main.scss */
+body img {
+  width: 500px;
+  height: 100px;
+  display: inline-block;
+  background: #cc8400;
+  margin: 5px;
+}
+/* line 55, ../../app/styles/main.scss */
+body footer {
+  margin-top: 70px;
+}
+/* line 59, ../../app/styles/main.scss */
+body footer .nav li a {
+  color: white;
+}
+/* line 61, ../../app/styles/main.scss */
+body footer .nav li a:hover {
+  color: #4d4d4d;
 }
