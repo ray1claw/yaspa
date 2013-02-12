@@ -1,13 +1,7 @@
 {
-    "name": "application-name"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "3.0.0"
-    , "jade": ">= 0.0.1"
-    , "coffee-script": ">= 0.0.1"
-    , "sass": ">= 0.0.1"
-    , "connect": ">= 0.0.1"
-    , "mongodb": ">= 0.0.1"
-  }
+  "author": "",
+  "name": "",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {}
 }
