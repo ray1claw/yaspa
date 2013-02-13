@@ -2170,7 +2170,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/app/images/glyphicons-halflings.png?1360665857');
+  background-image: url('/app/images/glyphicons-halflings.png?1360657905');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2185,7 +2185,7 @@ table .span24 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/app/images/glyphicons-halflings-white.png?1360665857');
+  background-image: url('/app/images/glyphicons-halflings-white.png?1360657905');
 }
 
 /* line 42, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -6006,7 +6006,7 @@ a.label:hover, a.badge:hover {
 }
 
 /* line 70, ../../app/styles/compass_twitter_bootstrap/_carousel.scss */
-.carousel-control, body .content-area .page-controls .page-control {
+.carousel-control, body .page-controls .page-control {
   position: absolute;
   top: 40%;
   left: 15px;
@@ -6027,12 +6027,12 @@ a.label:hover, a.badge:hover {
   filter: alpha(opacity=50);
 }
 /* line 95, ../../app/styles/compass_twitter_bootstrap/_carousel.scss */
-.carousel-control.right, body .content-area .page-controls .right.page-control {
+.carousel-control.right, body .page-controls .right.page-control {
   left: auto;
   right: 15px;
 }
 /* line 101, ../../app/styles/compass_twitter_bootstrap/_carousel.scss */
-.carousel-control:hover, body .content-area .page-controls .page-control:hover {
+.carousel-control:hover, body .page-controls .page-control:hover {
   color: white;
   text-decoration: none;
   opacity: 0.9;
@@ -7515,67 +7515,99 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-/* line 18, ../../app/styles/main.scss */
+/* line 26, ../../app/styles/main.scss */
 body {
   padding-top: 70px;
+  padding-bottom: 100px;
   color: white;
   background: orange;
+  position: relative;
 }
-/* line 25, ../../app/styles/main.scss */
+/* line 37, ../../app/styles/main.scss */
 body .navbar .brand {
   float: right;
 }
-/* line 30, ../../app/styles/main.scss */
+/* line 42, ../../app/styles/main.scss */
 body .pull-center {
   margin: 0 auto;
   display: block;
 }
-/* line 35, ../../app/styles/main.scss */
-body .content-area {
-  position: relative;
+/* line 48, ../../app/styles/main.scss */
+body .page-controls .page-control {
+  border: none;
+  border-radius: 0;
+  position: fixed;
+  z-index: 10;
 }
-/* line 40, ../../app/styles/main.scss */
-body .content-area .page-controls .page-control a {
+/* line 54, ../../app/styles/main.scss */
+body .page-controls .page-control a {
   color: white;
 }
-/* line 42, ../../app/styles/main.scss */
-body .content-area .page-controls .page-control a:hover {
+/* line 56, ../../app/styles/main.scss */
+body .page-controls .page-control a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 43, ../../app/styles/main.scss */
-body .content-area .page-controls .page-control a:visited {
+/* line 57, ../../app/styles/main.scss */
+body .page-controls .page-control a:visited {
   color: white;
 }
-/* line 45, ../../app/styles/main.scss */
-body .content-area .page-controls .page-control.left {
-  top: 30px;
+/* line 59, ../../app/styles/main.scss */
+body .page-controls .page-control.left {
+  top: 100px;
+  left: 0;
+  border-radius: 0 5px 5px 0;
 }
-/* line 49, ../../app/styles/main.scss */
-body .content-area .page-controls .page-control.right {
+/* line 65, ../../app/styles/main.scss */
+body .page-controls .page-control.right {
   top: 50%;
+  right: 0;
+  border-radius: 5px 0 0 5px;
 }
-/* line 57, ../../app/styles/main.scss */
+/* line 73, ../../app/styles/main.scss */
+body .content-area {
+  position: relative;
+}
+/* line 77, ../../app/styles/main.scss */
 body img {
   width: 400px;
   height: 100px;
   display: inline-block;
   background: #cc8400;
 }
-/* line 68, ../../app/styles/main.scss */
+/* line 88, ../../app/styles/main.scss */
 body footer {
-  margin-top: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  width: 100%;
+  background: orange;
 }
-/* line 72, ../../app/styles/main.scss */
+/* line 96, ../../app/styles/main.scss */
 body footer .nav li a {
   color: white;
 }
-/* line 74, ../../app/styles/main.scss */
+/* line 98, ../../app/styles/main.scss */
 body footer .nav li a:hover {
   color: #4d4d4d;
 }
 
-/* line 86, ../../app/styles/main.scss */
-#contact-form legend {
+/* line 110, ../../app/styles/main.scss */
+#contact-page legend {
   color: white;
+}
+
+/* line 116, ../../app/styles/main.scss */
+#about-page .sidebar-item {
+  margin-bottom: 5px;
+  width: 115px;
+  display: inline-block;
+}
+/* line 117, ../../app/styles/main.scss */
+#about-page .sidebar-item.current {
+  width: 100%;
+}
+/* line 119, ../../app/styles/main.scss */
+#about-page .sidebar-item.current img {
+  height: 200px;
 }
