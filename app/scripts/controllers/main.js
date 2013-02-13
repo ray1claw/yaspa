@@ -25,3 +25,20 @@ yaspaApp.controller('YaspaFooter', function($scope, $http) {
   // Order navigation by weight.
   $scope.order= "weight";
 });
+
+yaspaApp.controller('YaspaAbout', function($scope, $http) {
+  $http.get("data/about.json").success(function(data){
+    $scope.thumbnails = data;
+    $scope.mainImageUrl = data[0].image;
+    $scope.content = data[0].content;
+    $scope.title = data[0].title;
+  });
+
+  $scope.mainImage = function(imag){
+    console.log(imag);
+    $scope.mainImageUrl = imag.image;
+    $scope.content = imag.content;
+    $scope.title = imag.title;
+  }
+
+});
