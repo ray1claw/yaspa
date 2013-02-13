@@ -1,0 +1,17 @@
+[
+  {
+  	"title" : "Link1",
+  	"append" : "link1",
+  	"weight" : 0,
+  },
+  {
+  	"title" : "Link2",
+  	"append" : "link2",
+  	"weight" : 1,
+  },
+  {
+  	"title" : "Contact",
+  	"append" : "contact",
+  	"weight" : 2,
+  }
+]
