@@ -1,14 +1,17 @@
 [
     {"name": "Home",
      "link": "#",
+     "id": "/",
      "weight": 0
      },
     {"name": "About",
      "link": "#about",
+     "id": "/about",
      "weight": 1
      },
     {"name": "Contact",
      "link": "#contact",
-     "weight": 2
+     "id": "/contact",
+     "weight": 3
      }
 ]

@@ -41,3 +41,21 @@ yaspaApp.controller('YaspaAbout', function($scope, $http) {
   }
 
 });
+
+yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
+  console.log($location);
+  $http.get("data/nav.json").success(function(data){
+    var currentUrl = $location.path();
+    for(var i=0; i < data.length; i++){
+      if(data[i].id == currentUrl){
+        if(i+1 < data.length){
+          $scope.nxt = data[i+1].link;
+        }
+        if(i-1 >= 0){
+          $scope.prev = data[i-1].link;
+        }        
+      }
+    }
+  });
+
+});
