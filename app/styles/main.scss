@@ -13,6 +13,8 @@ $fontcolor: white;
 
 // Styles --
 
+// -- Base Styles
+
 body {
 	padding-top: 70px;
 
@@ -20,7 +22,6 @@ body {
 	background: $bgcolor;
 
 	.navbar{
-		
 		.brand {
 		float: right;
 		}
@@ -31,30 +32,34 @@ body {
 		display: block;
 	}
 
-	.page-controls {
-		.page-control {
-			@extend .carousel-control;
-			a {
-				color: $white;
-				&:hover { color: $white; text-decoration: none; }
-				&:visited { color: $white; }
-			}
-			&.left {
-				top: 100px;
-			}
+	.content-area {
+		position: relative;
+		.page-controls {
+			.page-control {
+				@extend .carousel-control;
+				a {
+					color: $white;
+					&:hover { color: $white; text-decoration: none; }
+					&:visited { color: $white; }
+				}
+				&.left {
+					top: 30px;
+				}
 
-			&.right {
-				top: 50%;
+				&.right {
+					top: 50%;
+				}
 			}
 		}
+
 	}
 
 	img {
-		width: 500px;
+		width: 400px;
 		height: 100px;
 		display: inline-block;
 		background: darken($bgcolor, 10%);
-		margin: 5px;
+		// margin: 5px;
 	}
 
 	.sidebar-item {
@@ -72,5 +77,13 @@ body {
 				}
 			}
 		}
+	}
+}
+
+// -- Specifc Page Styles
+
+#contact-form {
+	legend {
+		color: $fontcolor; 
 	}
 }
