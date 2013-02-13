@@ -1,41 +1,18 @@
-<div class="row-fluid" id="about-page">
+<div class="row-fluid" id="about-page" ng-controller="YaspaAbout">
 	<div class="span3"> <!-- sidebar -->
 		<div class="current sidebar-item">
-			<img src="" class="img-rounded" />
+			<img src="{{mainImageUrl}}" class="img-rounded" />
 		</div>
-		<div class="row-fluid">
+		<div class="row-fluid" ng-repeat="thumb in thumbnails">
 			<div class="sidebar-item">
-				<img src="" class="img-rounded" />
-			</div>
-			<div class="sidebar-item">
-				<img src="" class="img-rounded" />
-			</div>
-			<div class="sidebar-item">
-				<img src="" class="img-rounded" />
-			</div>
-			<div class="sidebar-item">
-				<img src="" class="img-rounded" />
+				<img src="{{thumb.image}}" ng-click="mainImage(thumb)" class="img-rounded" />
 			</div>
 		</div>
 	</div> <!-- /sidebar -->
 	<div class="span9"> <!-- content -->
-		<h3>Continually drive exceptional processes without effective internal.</h3>
+		<h3>{{title}}</h3>
 		<p>
-			Compellingly optimize distributed communities for principle-centered total linkage. Conveniently recaptiualize distributed functionalities without reliable.
-			<ul>
-				<li>
-					Competently initiate cost effective systems before intuitive outsourcing. Objectively iterate stand-alone content via ubiquitous mindshare. Professionally conceptualize 2.0 systems after 2.0.
-				</li>
-				<li>
-					Competently initiate cost effective systems before intuitive outsourcing. Objectively iterate stand-alone content via ubiquitous mindshare. Professionally conceptualize 2.0 systems after 2.0.
-				</li>
-				<li>
-					Competently initiate cost effective systems before intuitive outsourcing. Objectively iterate stand-alone content via ubiquitous mindshare. Professionally conceptualize 2.0 systems after 2.0.
-				</li>
-				<li>
-					Competently initiate cost effective systems before intuitive outsourcing. Objectively iterate stand-alone content via ubiquitous mindshare. Professionally conceptualize 2.0 systems after 2.0.
-				</li>
-			</ul>
+			{{content}}
 		</p>
 	</div> <!-- /content -->
 </div>
