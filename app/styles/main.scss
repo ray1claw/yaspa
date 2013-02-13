@@ -19,8 +19,16 @@ body {
 	color: $fontcolor;
 	background: $bgcolor;
 
-	.navbar .brand {
+	.navbar{
+		
+		.brand {
 		float: right;
+		}
+	}
+
+	.pull-center {
+		margin: 0 auto;
+		display: block;
 	}
 
 	.page-controls {
