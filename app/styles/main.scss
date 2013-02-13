@@ -17,9 +17,11 @@ $fontcolor: white;
 
 body {
 	padding-top: 70px;
+	padding-bottom: 70px;
 
 	color: $fontcolor;
 	background: $bgcolor;
+	position: relative;
 
 	.navbar{
 		.brand {
@@ -32,26 +34,34 @@ body {
 		display: block;
 	}
 
-	.content-area {
-		position: relative;
-		.page-controls {
-			.page-control {
-				@extend .carousel-control;
-				a {
-					color: $white;
-					&:hover { color: $white; text-decoration: none; }
-					&:visited { color: $white; }
-				}
-				&.left {
-					top: 30px;
-				}
+	.page-controls {
+		.page-control {
+			@extend .carousel-control;
+			border: none;
+			border-radius: 0;
+			position: fixed;
+			z-index: 10;
+			a {
+				color: $white;
+				&:hover { color: $white; text-decoration: none; }
+				&:visited { color: $white; }
+			}
+			&.left {
+				top: 100px;
+				left: 0;
+				border-radius: 0 5px 5px 0;
+			}
 
-				&.right {
-					top: 50%;
-				}
+			&.right {
+				top: 50%;
+				right: 0;
+				border-radius: 5px 0 0 5px;
 			}
 		}
+	}
 
+	.content-area {
+		position: relative;
 	}
 
 	img {
@@ -66,7 +76,10 @@ body {
 	}
 
 	footer {
-		margin-top: 70px;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: $bgcolor;
 		.nav {
 			li {
 				a {
