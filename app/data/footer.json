@@ -1,0 +1,14 @@
+[
+    {"name": "Privacy Policy",
+     "link": "#",
+     "weight": 0
+     },
+    {"name": "Terms of Use",
+     "link": "#about",
+     "weight": 1
+     },
+    {"name": "Local Language Information",
+     "link": "#contact",
+     "weight": 2
+     }
+]
