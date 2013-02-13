@@ -35,7 +35,6 @@ yaspaApp.controller('YaspaAbout', function($scope, $http) {
   });
 
   $scope.mainImage = function(imag){
-    console.log(imag);
     $scope.mainImageUrl = imag.image;
     $scope.content = imag.content;
     $scope.title = imag.title;
