@@ -7515,7 +7515,7 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-/* line 18, ../../app/styles/main.scss */
+/* line 26, ../../app/styles/main.scss */
 body {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -7523,75 +7523,90 @@ body {
   background: orange;
   position: relative;
 }
-/* line 27, ../../app/styles/main.scss */
+/* line 37, ../../app/styles/main.scss */
 body .navbar .brand {
   float: right;
 }
-/* line 32, ../../app/styles/main.scss */
+/* line 42, ../../app/styles/main.scss */
 body .pull-center {
   margin: 0 auto;
   display: block;
 }
-/* line 38, ../../app/styles/main.scss */
+/* line 48, ../../app/styles/main.scss */
 body .page-controls .page-control {
   border: none;
   border-radius: 0;
   position: fixed;
   z-index: 10;
 }
-/* line 44, ../../app/styles/main.scss */
+/* line 54, ../../app/styles/main.scss */
 body .page-controls .page-control a {
   color: white;
 }
-/* line 46, ../../app/styles/main.scss */
+/* line 56, ../../app/styles/main.scss */
 body .page-controls .page-control a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 47, ../../app/styles/main.scss */
+/* line 57, ../../app/styles/main.scss */
 body .page-controls .page-control a:visited {
   color: white;
 }
-/* line 49, ../../app/styles/main.scss */
+/* line 59, ../../app/styles/main.scss */
 body .page-controls .page-control.left {
   top: 100px;
   left: 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 55, ../../app/styles/main.scss */
+/* line 65, ../../app/styles/main.scss */
 body .page-controls .page-control.right {
   top: 50%;
   right: 0;
   border-radius: 5px 0 0 5px;
 }
-/* line 63, ../../app/styles/main.scss */
+/* line 73, ../../app/styles/main.scss */
 body .content-area {
   position: relative;
 }
-/* line 67, ../../app/styles/main.scss */
+/* line 77, ../../app/styles/main.scss */
 body img {
   width: 400px;
   height: 100px;
   display: inline-block;
   background: #cc8400;
 }
-/* line 78, ../../app/styles/main.scss */
+/* line 88, ../../app/styles/main.scss */
 body footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   background: orange;
 }
-/* line 85, ../../app/styles/main.scss */
+/* line 95, ../../app/styles/main.scss */
 body footer .nav li a {
   color: white;
 }
-/* line 87, ../../app/styles/main.scss */
+/* line 97, ../../app/styles/main.scss */
 body footer .nav li a:hover {
   color: #4d4d4d;
 }
 
-/* line 99, ../../app/styles/main.scss */
-#contact-form legend {
+/* line 109, ../../app/styles/main.scss */
+#contact-page legend {
   color: white;
+}
+
+/* line 115, ../../app/styles/main.scss */
+#about-page .sidebar-item {
+  margin-bottom: 5px;
+  width: 115px;
+  display: inline-block;
+}
+/* line 116, ../../app/styles/main.scss */
+#about-page .sidebar-item.current {
+  width: 100%;
+}
+/* line 118, ../../app/styles/main.scss */
+#about-page .sidebar-item.current img {
+  height: 200px;
 }

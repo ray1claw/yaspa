@@ -9,6 +9,14 @@ $fontcolor: white;
 
 // Mixins --
 
+// @mixin transparent($color, $alpha) {
+//   $rgba: rgba($color, $alpha);
+//   $ie-hex-str: ie-hex-str($rgba);
+//   background-color: transparent;
+//   background-color: $rgba;
+//   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+//   zoom: 1;
+// }
 
 
 // Styles --
@@ -24,6 +32,8 @@ body {
 	position: relative;
 
 	.navbar{
+		.navbar-inner {
+		}
 		.brand {
 		float: right;
 		}
@@ -95,8 +105,22 @@ body {
 
 // -- Specifc Page Styles
 
-#contact-form {
+#contact-page {
 	legend {
 		color: $fontcolor; 
+	}
+}
+
+#about-page {
+	.sidebar-item {
+		&.current {
+			width: 100%;
+			img {
+				height: 200px;
+			}
+		}
+		margin-bottom: 5px;
+		width: 115px;
+		display: inline-block;
 	}
 }
