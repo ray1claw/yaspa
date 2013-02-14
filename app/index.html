@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" ng-app="yaspaApp" ng-controller="Yaspatest" ui-keypress="{39:'keypressCallback($event)'}"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -17,7 +17,7 @@
         
     </head>
 
-    <body>
+    <body ng-app="yaspaApp">
         <div ></div>
         <div class="navbar navbar-fixed-top" ng-controller="YaspaNavigation">
             <div class="navbar-inner container-fluid">
@@ -48,8 +48,8 @@
 
         <!--Arrow navigation-->
         <div class="page-controls hidden-phone" ng-controller="YaspaPrevNxt">
-            <a class="page-control left" href="{{prev}}" ng-show="prevShow" ui-keypress="{13:'keypressCallback($event)'}">&lsaquo;</a>
-            <a class="page-control right" href="{{nxt}}" ng-show="nxtShow" ui-keypress="{13:'keypressCallback($event)'}">&rsaquo;</a>
+            <a class="page-control left" href="{{prev}}" ng-show="prevShow">&lsaquo;</a>
+            <a class="page-control right" href="{{nxt}}" ng-show="nxtShow">&rsaquo;</a>
         </div>
 
         <!-- Content Area -->
@@ -68,7 +68,7 @@
                     <div class="span6">
                         <small>
                             <ul class="nav nav-pills pull-right">
-                                <li ng-repeat="footerItem in footer | orderBy: order"><a href="{{footerItem.link}}">{{footerItem.name}}</a></li>
+                                <li ng-repeat="footerItem in footer | orderBy: order" ng-class="{true:'active',false:''}[id == footerItem.id]"><a href="{{footerItem.link}}">{{footerItem.name}}</a></li>
                             </ul>
                         </small>
                     </div>

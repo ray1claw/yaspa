@@ -19,7 +19,9 @@ yaspaApp.controller('YaspaNavigation', function($scope, $location, $http) {
       for(var i=0; i<data.length; i++){
         if($location.path() == data[i].id){
           $scope.id = data[i].id;
-        console.log(data[i].id);
+        }
+        else if($location.path() == "/page/"){
+          $scope.id = "";
         }
       }
     });
@@ -31,17 +33,20 @@ yaspaApp.controller('YaspaNavigation', function($scope, $location, $http) {
 
 yaspaApp.controller('YaspaFooter', function($scope, $location, $http) {
 
+
   $http.get("data/footer.json").success(function(data){
   $scope.footer = data;
   var currentUrl = $location.hash();
+  $scope.id = currentUrl;
   $scope.$on('$routeChangeStart', function(){
+  $scope.id = $location.hash();
+  });
     for(var i=0; i<data.length; i++){
       if(currentUrl == data[i].id){
         $scope.content = data[i].content;
         $scope.name = data[i].name;
       }
     }
-  });
 
     // Order navigation by weight.
     $scope.order= "weight";
@@ -94,11 +99,4 @@ yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
   });
 });
 
-});
-
-yaspaApp.controller('Yaspatest', function($scope) {
-  $scope.keypressCallback = function($event) {
-  alert('Voila!');
-  $event.preventDefault();
-}
 });
