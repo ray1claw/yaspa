@@ -2170,7 +2170,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/app/images/glyphicons-halflings.png?1360665857');
+  background-image: url('/app/images/glyphicons-halflings.png?1360657905');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2185,7 +2185,7 @@ table .span24 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/app/images/glyphicons-halflings-white.png?1360665857');
+  background-image: url('/app/images/glyphicons-halflings-white.png?1360657905');
 }
 
 /* line 42, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -7523,59 +7523,64 @@ body {
   background: orange;
   position: relative;
 }
-/* line 37, ../../app/styles/main.scss */
+/* line 36, ../../app/styles/main.scss */
+body .navbar .navbar-inner .btn-navbar {
+  float: left;
+}
+/* line 40, ../../app/styles/main.scss */
 body .navbar .brand {
   float: right;
 }
-/* line 42, ../../app/styles/main.scss */
+/* line 45, ../../app/styles/main.scss */
 body .pull-center {
   margin: 0 auto;
   display: block;
 }
-/* line 48, ../../app/styles/main.scss */
+/* line 51, ../../app/styles/main.scss */
 body .page-controls .page-control {
   border: none;
   border-radius: 0;
   position: fixed;
   z-index: 10;
 }
-/* line 54, ../../app/styles/main.scss */
+/* line 57, ../../app/styles/main.scss */
 body .page-controls .page-control a {
   color: white;
 }
-/* line 56, ../../app/styles/main.scss */
+/* line 59, ../../app/styles/main.scss */
 body .page-controls .page-control a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 57, ../../app/styles/main.scss */
+/* line 60, ../../app/styles/main.scss */
 body .page-controls .page-control a:visited {
   color: white;
 }
-/* line 59, ../../app/styles/main.scss */
+/* line 62, ../../app/styles/main.scss */
 body .page-controls .page-control.left {
   top: 100px;
   left: 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 65, ../../app/styles/main.scss */
+/* line 68, ../../app/styles/main.scss */
 body .page-controls .page-control.right {
   top: 50%;
   right: 0;
   border-radius: 5px 0 0 5px;
 }
-/* line 73, ../../app/styles/main.scss */
+/* line 76, ../../app/styles/main.scss */
 body .content-area {
   position: relative;
 }
-/* line 77, ../../app/styles/main.scss */
+/* line 80, ../../app/styles/main.scss */
 body img {
-  width: 400px;
+  width: 100%;
   height: 100px;
   display: inline-block;
+  margin-bottom: 5px;
   background: #cc8400;
 }
-/* line 88, ../../app/styles/main.scss */
+/* line 89, ../../app/styles/main.scss */
 body footer {
   position: fixed;
   bottom: 0;
@@ -7583,30 +7588,20 @@ body footer {
   width: 100%;
   background: orange;
 }
-/* line 96, ../../app/styles/main.scss */
+/* line 97, ../../app/styles/main.scss */
 body footer .nav li a {
   color: white;
 }
-/* line 98, ../../app/styles/main.scss */
+/* line 99, ../../app/styles/main.scss */
 body footer .nav li a:hover {
   color: #4d4d4d;
 }
 
-/* line 110, ../../app/styles/main.scss */
+/* line 111, ../../app/styles/main.scss */
 #contact-page legend {
   color: white;
 }
 
-/* line 116, ../../app/styles/main.scss */
-#about-page .sidebar-item {
-  margin-bottom: 5px;
-  width: 115px;
-  display: inline-block;
-}
-/* line 117, ../../app/styles/main.scss */
-#about-page .sidebar-item.current {
-  width: 100%;
-}
 /* line 119, ../../app/styles/main.scss */
 #about-page .sidebar-item.current img {
   height: 200px;
