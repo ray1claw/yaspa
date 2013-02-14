@@ -8,9 +8,21 @@ yaspaApp.controller('MainCtrl', function($scope) {
   ];
 });
 
-yaspaApp.controller('YaspaNavigation', function($scope, $http) {
+yaspaApp.controller('YaspaNavigation', function($scope, $location, $http) {
+
+
   $http.get("data/nav.json").success(function(data){
   	$scope.navigation = data;
+    $scope.actives = "";
+    $scope.id = $location.path();
+    $scope.$on('$routeChangeStart', function(){
+      for(var i=0; i<data.length; i++){
+        if($location.path() == data[i].id){
+          $scope.id = data[i].id;
+        console.log(data[i].id);
+        }
+      }
+    });
   });
 
   // Order navigation by weight.
@@ -18,9 +30,11 @@ yaspaApp.controller('YaspaNavigation', function($scope, $http) {
 });
 
 yaspaApp.controller('YaspaFooter', function($scope, $location, $http) {
+
   $http.get("data/footer.json").success(function(data){
-  	$scope.footer = data;
-    var currentUrl = $location.hash();
+  $scope.footer = data;
+  var currentUrl = $location.hash();
+  $scope.$on('$routeChangeStart', function(){
     for(var i=0; i<data.length; i++){
       if(currentUrl == data[i].id){
         $scope.content = data[i].content;
@@ -29,8 +43,9 @@ yaspaApp.controller('YaspaFooter', function($scope, $location, $http) {
     }
   });
 
-  // Order navigation by weight.
-  $scope.order= "weight";
+    // Order navigation by weight.
+    $scope.order= "weight";
+  });
 });
 
 yaspaApp.controller('YaspaAbout', function($scope, $http) {
@@ -50,18 +65,40 @@ yaspaApp.controller('YaspaAbout', function($scope, $http) {
 });
 
 yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
-  $http.get("data/nav.json").success(function(data){
+  
+  $scope.$on('$routeChangeStart', function(){
+    $http.get("data/nav.json").success(function(data){
     var currentUrl = $location.path();
+    $scope.nxtShow = 0;
+    $scope.prevShow = 0;
     for(var i=0; i < data.length; i++){
       if(data[i].id == currentUrl){
         if(i+1 < data.length){
           $scope.nxt = data[i+1].link;
+          $scope.nxtShow = 1;
         }
         if(i-1 >= 0){
           $scope.prev = data[i-1].link;
+          $scope.prevShow = 1;
         }        
       }
     }
-  });
+    if($location.path() == '/page/'){
+      $scope.nxtShow = 0;
+      $scope.prevShow = 0;
+    }
+    $scope.keypressCallback = function(event) {
+  alert('Voila!');
 
+};
+  });
+});
+
+});
+
+yaspaApp.controller('Yaspatest', function($scope) {
+  $scope.keypressCallback = function($event) {
+  alert('Voila!');
+  $event.preventDefault();
+}
 });
