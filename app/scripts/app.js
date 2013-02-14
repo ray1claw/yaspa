@@ -1,6 +1,6 @@
 'use strict';
 
-var yaspaApp = angular.module('yaspaApp', [])
+var yaspaApp = angular.module('yaspaApp', ['ui'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
