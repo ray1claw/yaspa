@@ -17,9 +17,16 @@ yaspaApp.controller('YaspaNavigation', function($scope, $http) {
   $scope.order= "weight";
 });
 
-yaspaApp.controller('YaspaFooter', function($scope, $http) {
+yaspaApp.controller('YaspaFooter', function($scope, $location, $http) {
   $http.get("data/footer.json").success(function(data){
   	$scope.footer = data;
+    var currentUrl = $location.hash();
+    for(var i=0; i<data.length; i++){
+      if(currentUrl == data[i].id){
+        $scope.content = data[i].content;
+        $scope.name = data[i].name;
+      }
+    }
   });
 
   // Order navigation by weight.
@@ -43,7 +50,6 @@ yaspaApp.controller('YaspaAbout', function($scope, $http) {
 });
 
 yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
-  console.log($location);
   $http.get("data/nav.json").success(function(data){
     var currentUrl = $location.path();
     for(var i=0; i < data.length; i++){

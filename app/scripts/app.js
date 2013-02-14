@@ -13,11 +13,11 @@ var yaspaApp = angular.module('yaspaApp', [])
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'MainCtrl'
+        controller: 'YaspaAbout'
       })
       .when('/page/:page', {
         templateUrl: 'views/footer.html',
-        controller: 'MainCtrl'
+        controller: 'YaspaFooter'
       })
       .otherwise({
         redirectTo: '/'
