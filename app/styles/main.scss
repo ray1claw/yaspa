@@ -33,6 +33,9 @@ body {
 
 	.navbar{
 		.navbar-inner {
+			.btn-navbar {
+				float: left;
+			}
 		}
 		.brand {
 		float: right;
@@ -75,14 +78,12 @@ body {
 	}
 
 	img {
-		width: 400px;
+		width: 100%;
 		height: 100px;
 		display: inline-block;
+		margin-bottom: 5px;
 		background: darken($bgcolor, 10%);
 		// margin: 5px;
-	}
-
-	.sidebar-item {
 	}
 
 	footer {
@@ -115,13 +116,9 @@ body {
 #about-page {
 	.sidebar-item {
 		&.current {
-			width: 100%;
 			img {
 				height: 200px;
 			}
 		}
-		margin-bottom: 5px;
-		width: 115px;
-		display: inline-block;
 	}
 }
