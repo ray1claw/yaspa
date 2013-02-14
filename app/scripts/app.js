@@ -15,6 +15,10 @@ var yaspaApp = angular.module('yaspaApp', [])
         templateUrl: 'views/about.html',
         controller: 'MainCtrl'
       })
+      .when('/page/:page', {
+        templateUrl: 'views/footer.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

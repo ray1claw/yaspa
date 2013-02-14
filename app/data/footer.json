@@ -1,14 +1,14 @@
 [
     {"name": "Privacy Policy",
-     "link": "#",
+     "link": "#page/#privacy-policy",
      "weight": 0
      },
     {"name": "Terms of Use",
-     "link": "#about",
+     "link": "#page/#terms-of-use",
      "weight": 1
      },
     {"name": "Local Language Information",
-     "link": "#contact",
+     "link": "#page/#local-laninfo",
      "weight": 2
      }
 ]
