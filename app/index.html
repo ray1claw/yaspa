@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Yaspa</a>
+                <a class="brand" href="#">Y.A.S.P.A</a>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li ng-repeat="nav in navigation | orderBy: order"><a href="{{nav.link}}">{{nav.name}}</a></li>
@@ -42,9 +42,9 @@
         <!-- Add your site or application content here -->
 
         <!--Arrow navigation-->
-        <div class="page-controls hidden-phone">
-            <a class="page-control left" href="#">&lsaquo;</a>
-            <a class="page-control right" href="#">&rsaquo;</a>
+        <div class="page-controls hidden-phone" ng-controller="YaspaPrevNxt">
+            <a class="page-control left" href="{{prev}}">&lsaquo;</a>
+            <a class="page-control right" href="{{nxt}}">&rsaquo;</a>
         </div>
 
         <!-- Content Area -->
