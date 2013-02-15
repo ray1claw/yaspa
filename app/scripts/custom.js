@@ -12,3 +12,7 @@ $("html").keydown(function(event) {
   	$(".page-controls .right").click();
   }
 });
+
+$(document).ready(function($) {
+	$('#about-content').fitVids();
+});
