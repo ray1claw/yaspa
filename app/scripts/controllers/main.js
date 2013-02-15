@@ -74,6 +74,7 @@ yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
   $scope.$on('$routeChangeStart', function(){
     $http.get("data/nav.json").success(function(data){
     var currentUrl = $location.path();
+    $scope.text="";
     $scope.nxtShow = 0;
     $scope.prevShow = 0;
     for(var i=0; i < data.length; i++){
@@ -81,11 +82,14 @@ yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
         if(i+1 < data.length){
           $scope.nxt = data[i+1].link;
           $scope.nxtShow = 1;
+          if(currentUrl=="/"){
+            $scope.text="Know more";
+          } 
         }
         if(i-1 >= 0){
           $scope.prev = data[i-1].link;
           $scope.prevShow = 1;
-        }        
+        }      
       }
     }
     if($location.path() == '/page/'){
