@@ -2170,7 +2170,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/app/images/glyphicons-halflings.png?1360665857');
+  background-image: url('/app/images/glyphicons-halflings.png?1360657905');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2185,7 +2185,7 @@ table .span24 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/app/images/glyphicons-halflings-white.png?1360665857');
+  background-image: url('/app/images/glyphicons-halflings-white.png?1360657905');
 }
 
 /* line 42, ../../app/styles/compass_twitter_bootstrap/_sprites.scss */
@@ -7324,7 +7324,7 @@ a.label:hover, a.badge:hover {
     margin-left: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 979px) {
   /* line 13, ../../app/styles/compass_twitter_bootstrap/_responsive-navbar.scss */
   body {
     padding-top: 0;
@@ -7568,19 +7568,32 @@ body .page-controls .page-control.right {
   right: 0;
   border-radius: 5px 0 0 5px;
 }
-/* line 76, ../../app/styles/main.scss */
+/* line 73, ../../app/styles/main.scss */
+body .page-controls .page-control.right span#know-more {
+  background: inherit;
+  border-radius: 5px 0 0 5px;
+  display: inline-block;
+  font-size: 18px;
+  height: 35px;
+  left: -90px;
+  padding: 5px 10px 0;
+  position: absolute;
+  top: 0;
+}
+/* line 88, ../../app/styles/main.scss */
 body .content-area {
   position: relative;
 }
-/* line 80, ../../app/styles/main.scss */
+/* line 92, ../../app/styles/main.scss */
 body img {
-  width: 100%;
-  height: 100px;
+  max-width: 100%;
+  height: auto !important;
   display: inline-block;
   margin-bottom: 5px;
   background: #cc8400;
+  -ms-interpolation-mode: bicubic;
 }
-/* line 89, ../../app/styles/main.scss */
+/* line 102, ../../app/styles/main.scss */
 body footer {
   position: fixed;
   bottom: 0;
@@ -7588,29 +7601,30 @@ body footer {
   width: 100%;
   background: orange;
 }
-/* line 97, ../../app/styles/main.scss */
+/* line 110, ../../app/styles/main.scss */
 body footer .nav li a {
   color: white;
 }
-/* line 99, ../../app/styles/main.scss */
+/* line 112, ../../app/styles/main.scss */
 body footer .nav li a:hover {
   color: #4d4d4d;
 }
 
-/* line 111, ../../app/styles/main.scss */
+/* line 124, ../../app/styles/main.scss */
 #contact-page legend {
   color: white;
 }
 
-/* line 117, ../../app/styles/main.scss */
+/* line 130, ../../app/styles/main.scss */
 #about-page .sidebar-item {
   cursor: pointer;
 }
-/* line 119, ../../app/styles/main.scss */
-#about-page .sidebar-item.current {
-  cursor: default;
-}
-/* line 121, ../../app/styles/main.scss */
+/* line 132, ../../app/styles/main.scss */
 #about-page .sidebar-item.current img {
   height: 200px;
+  cursor: default;
+}
+/* line 136, ../../app/styles/main.scss */
+#about-page .sidebar-item img {
+  height: 100px;
 }
