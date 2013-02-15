@@ -29,7 +29,7 @@
                 <a class="brand" href="#">Yaspa</a>
                 <div class="nav-collapse">
                     <ul class="nav">
-                        <li ng-repeat="nav in navigation | orderBy: order" ng-class="{true:'active',false:''}[id == nav.id]"><a href="{{nav.link}}">{{nav.name}}</a></li>
+                        <li ng-repeat="nav in navigation | orderBy: order" ng-class="{true:'active',false:''}[id == nav.id]"><a onclick="hide_nav()" href="{{nav.link}}">{{nav.name}}</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
