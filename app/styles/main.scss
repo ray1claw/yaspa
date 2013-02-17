@@ -115,6 +115,9 @@ body {
 				}
 			}
 		}
+		.copyright {
+			margin-left: 12px;
+		}
 	}
 }
 
@@ -127,14 +130,24 @@ body {
 }
 
 #about-page {
-	.sidebar-item {
-		cursor: pointer;
-		&.current img {
-			height: 200px;
+	.current {
+		img {
 			cursor: default;
 		}
+	}
+	iframe {
+		width: 100%;
+	}
+	.sidebar-item {
+		cursor: pointer;
+		float: left;
+		height: 100px !important;
+		width: 100px !important;
+		margin: 0 5px 5px 0;
+		
 		img {
-			height: 100px;
+			height: 100px !important;
+			width: 100px !important;
 		}
 	}
 

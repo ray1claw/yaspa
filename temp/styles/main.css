@@ -7609,22 +7609,34 @@ body footer .nav li a {
 body footer .nav li a:hover {
   color: #4d4d4d;
 }
+/* line 118, ../../app/styles/main.scss */
+body footer .copyright {
+  margin-left: 12px;
+}
 
-/* line 124, ../../app/styles/main.scss */
+/* line 127, ../../app/styles/main.scss */
 #contact-page legend {
   color: white;
 }
 
-/* line 130, ../../app/styles/main.scss */
-#about-page .sidebar-item {
-  cursor: pointer;
-}
-/* line 132, ../../app/styles/main.scss */
-#about-page .sidebar-item.current img {
-  height: 200px;
+/* line 134, ../../app/styles/main.scss */
+#about-page .current img {
   cursor: default;
 }
-/* line 136, ../../app/styles/main.scss */
+/* line 138, ../../app/styles/main.scss */
+#about-page iframe {
+  width: 100%;
+}
+/* line 141, ../../app/styles/main.scss */
+#about-page .sidebar-item {
+  cursor: pointer;
+  float: left;
+  height: 100px !important;
+  width: 100px !important;
+  margin: 0 5px 5px 0;
+}
+/* line 148, ../../app/styles/main.scss */
 #about-page .sidebar-item img {
-  height: 100px;
+  height: 100px !important;
+  width: 100px !important;
 }

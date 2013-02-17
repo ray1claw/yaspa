@@ -12,6 +12,7 @@ yaspaApp.controller('YaspaNavigation', function($scope, $location, $http) {
 
 
   $http.get("data/nav.json").success(function(data){
+    $scope.$on('$viewContentLoaded', hideNav());
   	$scope.navigation = data;
     $scope.actives = "";
     $scope.id = $location.path();
@@ -65,6 +66,7 @@ yaspaApp.controller('YaspaAbout', function($scope, $http) {
     $scope.mainImageUrl = imag.image;
     $scope.content = imag.content;
     $scope.title = imag.title;
+    $('#about-content').fitVids();
   }
 
 });
@@ -97,10 +99,20 @@ yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
       $scope.prevShow = 0;
     }
     $scope.keypressCallback = function(event) {
-  alert('Voila!');
-
-};
+      alert('Voila!');};
+    });
   });
-});
 
 });
+
+
+ var hideNav = function() {
+  console.log('test');
+  $('li').bind('click', function() {
+    console.log('done');
+    if($('.btn-navbar').is(":visible")) {
+      $('.btn-navbar').click();
+    }
+    return;
+  });
+}
