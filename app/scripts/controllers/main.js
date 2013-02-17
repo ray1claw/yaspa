@@ -84,11 +84,13 @@ yaspaApp.controller('YaspaPrevNxt', function($scope, $location, $http) {
         if(i+1 < data.length){
           $scope.nxt = data[i+1].link;
           $scope.nxtShow = 1;
+          $scope.rtext="&rsaquo;";
           if(currentUrl=="/"){
-            $scope.text="Know more";
+            $scope.rtext="<span id='know-more'>Know more </span>&rsaquo;";
           } 
         }
         if(i-1 >= 0){
+          $scope.ltext="&lsaquo;";
           $scope.prev = data[i-1].link;
           $scope.prevShow = 1;
         }      

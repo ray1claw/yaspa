@@ -7,7 +7,7 @@
     {
       "image": "images/cyclist_penguin.png",
       "title": "Cyclist",
-      "content": "<iframe width='560' height='315' src='http://www.youtube.com/embed/-pNmFaxQxdg' frameborder='0' allowfullscreen></iframe>"
+      "content": "<iframe width='560' height='315' src='http://www.youtube.com/embed/-pNmFaxQxdg?wmode=opaque' frameborder='0' allowfullscreen></iframe>"
     },
     {
       "image": "images/drunken_penguin.png",
