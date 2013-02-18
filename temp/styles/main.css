@@ -7667,13 +7667,18 @@ body footer .copyright {
   margin: 0 5px 5px 0;
   position: relative;
 }
-/* line 185, ../../app/styles/main.scss */
+/* line 186, ../../app/styles/main.scss */
+#about-page .sidebar-item a:hover .section-name {
+  display: block !important;
+}
+/* line 191, ../../app/styles/main.scss */
 #about-page .sidebar-item img {
   height: 100px !important;
   width: 100px !important;
 }
-/* line 190, ../../app/styles/main.scss */
+/* line 196, ../../app/styles/main.scss */
 #about-page .sidebar-item .section-name {
+  display: none;
   background: rgba(0, 0, 0, 0.8);
   color: white;
   position: absolute;

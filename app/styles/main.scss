@@ -181,6 +181,12 @@ body {
 		width: 100px !important;
 		margin: 0 5px 5px 0;
 		position: relative;
+
+		a:hover {
+			.section-name {
+				display: block !important;
+			}
+		}
 		
 		img {
 			height: 100px !important;
@@ -188,6 +194,7 @@ body {
 		}
 
 		.section-name {
+			display: none;
 			background: rgba(#000, 0.8);
 			color: white;
 			position: absolute;
