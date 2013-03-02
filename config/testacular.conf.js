@@ -6,8 +6,8 @@ files = [
   'assets/js/lib/angular/angular.js',
   'assets/js/lib/angular/angular-*.js',
   'test/lib/angular/angular-mocks.js',
-  'test/unit/**/*.coffee',
-  'assets/js/*.coffee'
+  'assets/js/**/*.js',
+  'test/unit/**/*.js'
 ];
 
 autoWatch = true;

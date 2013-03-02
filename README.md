@@ -1,14 +1,10 @@
 # Angular Express Seed
 
-This is an Angular Express Seed project which is written in CoffeeScript and adapted from Brian Ford's awesome seed project (<https://github.com/btford/angular-express-seed>).
+This is an Angular Express Seed project which is adapted from Brian Ford's awesome seed project (<https://github.com/btford/angular-express-seed>).
 
-This project contains seed tests (Unit Test & E2E Test) for AngularJS and some modifications in the app config file (app.coffee) to run E2E tests on browser.
+This project contains seed tests (Unit Test & E2E Test) for AngularJS and some modifications in the app config file (app.js) to run E2E tests on browser.
 
-The Angular coffeescript files are stored under assets/js which is then managed by assets-connect middle-ware.
-
-While writing Angular unit tests, please be noticed that the module function should return nothing (put return in that function to prevent coffeescript auto return the last line).
-
-For Javascript version of this project, please visit <https://github.com/thanh-nguyen/angular-express-seed>
+For CoffeeScript version of this project, please visit <https://github.com/thanh-nguyen/angular-express-seed-coffee>
 
 ## Intro
 
@@ -21,7 +17,7 @@ instant web development gratification. Just clone the repo (or download the zip/
 you're ready to develop your application.
 
 The seed app shows how to wire together Angular client-side components with Express on the server.
-It also illustrates writing angular partial views with the Jade templating library.
+It also illustrates writing angular partials/views with the Jade templating library.
 
 *Note: Although Jade supports interpolation, you should be doing that mostly on the client. Mixing
 server and browser templating will convolute your app. Instead, use Jade as a syntactic sugar for
@@ -35,9 +31,9 @@ Clone the repository and start hacking!
 
 Runs like a typical express app:
 
-    node app.coffee
+    node app.js
     OR
-    nodemon app.coffee    // for auto reload server on code changes (npm install -g nodemon)
+    nodemon app.js    // for auto reload server on code changes (npm install -g nodemon)
 
 ### Running tests
 
@@ -50,9 +46,8 @@ For AgnularJS Unit Tests:
 For AngularJS E2E Tests:
 
     scripts/e2e-test.sh
-
-    #### Note
-    Because writing in coffeescript, this project does not support running Angular e2e tests by "open localhost:3000/test/e2e/runner.html"
+    OR
+    open localhost:3000/test/e2e/runner.html
 
 ### Receiving updates from upstream
 
@@ -60,17 +55,17 @@ Just fetch the changes and merge them into your project with git.
 
 ## Directory Layout
 
-    app.coffee                  --> app config
+    app.js                      --> app config
     assets/                     --> stylus stylesheets and js configured by assets-connect
       css/
         app.styl                --> main css file
         bootstrap.min.css       --> twitter bootstrap css
       js/
-        app.coffee              --> declare top-level app module
-        controllers.coffee      --> application controllers
-        directives.coffee       --> custom angular directives
-        filters.coffee          --> custom angular filters
-        services.coffee         --> custom angular services
+        app.js                  --> declare top-level app module
+        controllers.js          --> application controllers
+        directives.js           --> custom angular directives
+        filters.js              --> custom angular filters
+        services.js             --> custom angular services
         lib/                    --> angular and 3rd party JavaScript libraries
           angular/
             angular.js          --> the latest angular js
@@ -86,8 +81,8 @@ Just fetch the changes and merge them into your project with git.
       css/                      --> css files
       js/                       --> javascript files
     routes/
-      api.coffee                --> route for serving JSON
-      home.coffee               --> route for serving HTML pages and partials
+      api.js                    --> route for serving JSON
+      home.js                   --> route for serving HTML pages and partials
     scripts/
       e2e-test.bat              --> angular e2e test runner for windows
       e2e-test.sh               --> angular e2e test runner for unix
@@ -96,14 +91,15 @@ Just fetch the changes and merge them into your project with git.
       watchr.rb                 --> watcher for auto re-running angular tests
     test/
       e2e/
-        scenarios.coffee        --> angular e2e tests
+        runner.html             --> html file to run e2e tests directly on browser
+        scenarios.js            --> angular e2e tests
       lib/
         angular/                --> angular library for testing
       unit/
-        controllersSpec.coffee  --> angular controllers' tests
-        directivesSpec.coffee   --> angular directives' tests
-        filtersSpec.coffee      --> angular filters' tests
-        servicesSpec.coffee     --> angular services' tests
+        controllersSpec.js      --> angular controllers' tests
+        directivesSpec.js       --> angular directives' tests
+        filtersSpec.js          --> angular filters' tests
+        servicesSpec.js         --> angular services' tests
     views/
       index.jade                --> main page for app
       layout.jade               --> doctype, title, head boilerplate
