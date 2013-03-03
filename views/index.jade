@@ -1,23 +1,105 @@
-extends layout
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    title Foundation 4
+    link(rel='stylesheet', href='../assets/css/normalize.css')
+    link(rel='stylesheet', href='../assets/css/app.css')
+    script(src='js/vendor/custom.modernizr.js')
+  body
+    .page-header
+      .page-header-content
+        h1
+          a(href='#') Yaspa
+    .page-region
+      .page-region-content
+        //- Using both block grids together for different layouts 
+        ul.tile-group
+          li.tile.double.bg-color-green
+            a.tile-content(href='#')
+              h2 Small Heading
+              h5 Subtitle
+              p
+                | Something Something meri jaan, keh de something meri jaan, na kar aise aitbaar!
+              .brand
+                i.foundicon-mail
+                .badge 12
+          li.tile.bg-color-blue.icon
+            a.tile-content(href='#')
+              i.foundicon-smiley
+              .brand
+                .name Icon
+          li.tile.image.bg-color-red
+            a.tile-content(href='#')
+              img(src='../assets/img/demos/demo1.png')
+              .brand
+                .name Image
+                .badge.bg-color-orangeDark 5
+          li.tile.double.image.bg-color-orange
+            a.tile-content(href='#')
+              img(src='../assets/img/demos/demo3.png')
+              .brand.bg-color-orange
+                i.foundicon-globe
+                p.text Bhootiya ghar ke baare mei wikipedia pe nhi milega baap!
+                .badge 3
+          li.tile.bg-color-yellow.icon
+            a.tile-content(href='#')
+              i.foundicon-cloud
+              .brand
+                .name Icon
+          li.tile.double.bg-color-red
+            a.tile-content(href='#')
+              img.place-right(src='../assets/img/demos/demo4.png')
+              h4 Title
+              p
+                | Something Something meri jaan, keh de something meri jaan, na kar aise aitbaar!
+              p
+                strong bleh bleh bleh
+              .brand
+                .name Tweet @ray1claw
+          li.tile.bg-color-pink.icon
+            a.tile-content(href='#')
+              i.foundicon-settings
+              .brand
+                .name Icon
+          li.tile.bg-color-greenLight.icon
+            a.tile-content(href='#')
+              i.foundicon-trash
+              .brand
+                .name Icon
+          li.tile.double.bg-color-blueDark.icon
+            a.tile-content(href='#')
+              i.foundicon-lock
+              .brand
+                .name Icon
+          li.tile.bg-color-orangeDark.icon
+            a.tile-content(href='#')
+              i.foundicon-location
+              .brand
+                .name Icon
+          li.tile.bg-color-yellow.icon
+            a.tile-content(href='#')
+              i.foundicon-clock
+              .brand
+                .name Icon
 
-block body
-  div(ng-controller='AppCtrl')
-    h2 Hello {{name}}
-    ul.menu
-      li
-        a(href='view1') view1
-      li
-        a(href='view2') view2
-
-    div(ng-view)
-
-    div
-      | Angular seed app: v
-      span(app-version)
-
-  script(src='js/lib/angular/angular.js')
-  script(src='js/app.js')
-  script(src='js/services.js')
-  script(src='js/controllers.js')
-  script(src='js/filters.js')
-  script(src='js/directives.js')
+                
+    //- script(src='../assets/js/vendor/zepto.js')
+    script(src='../assets/js/vendor/jquery.js')
+    script(src='../assets/js/foundation/foundation.js')
+    script(src='../assets/js/foundation/foundation.dropdown.js')
+    script(src='../assets/js/foundation/foundation.placeholder.js')
+    script(src='../assets/js/foundation/foundation.section.js')
+    script(src='../assets/js/foundation/foundation.clearing.js')
+    script(src='../assets/js/foundation/foundation.tooltips.js')
+    script(src='../assets/js/foundation/foundation.magellan.js')
+    script(src='../assets/js/foundation/foundation.forms.js')
+    script(src='../assets/js/foundation/foundation.alerts.js')
+    script(src='../assets/js/foundation/foundation.cookie.js')
+    script(src='../assets/js/foundation/foundation.orbit.js')
+    script(src='../assets/js/foundation/foundation.joyride.js')
+    script(src='../assets/js/foundation/foundation.topbar.js')
+    script(src='../assets/js/foundation/foundation.reveal.js')
+    script
+      $(document).foundation();
