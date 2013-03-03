@@ -15,7 +15,6 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
 		// $('li.tile').hide();
 		$('li.tile').css('opacity', '0');
 		$('li.tile').css('margin-left', '-20px');
-		console.log('test');
     $('ul.tile-group li').each(function(index) {
 
     	var stallFor = 75 * parseInt(index);
