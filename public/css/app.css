@@ -5848,8 +5848,9 @@ li.tile a.tile-content .brand i {
   margin: 5px 15px;
   font-size: 28px;
 }
-/* line 217, ../scss/app.scss */
-li.tile .reveal-modal {
+
+/* line 218, ../scss/app.scss */
+.reveal-modal {
   position: fixed;
   top: 0 !important;
   left: 0;
@@ -5859,27 +5860,27 @@ li.tile .reveal-modal {
   box-shadow: none;
   border: none;
 }
-/* line 226, ../scss/app.scss */
-li.tile .reveal-modal .modal-content {
+/* line 227, ../scss/app.scss */
+.reveal-modal .modal-content {
   margin-top: 60px;
 }
-/* line 229, ../scss/app.scss */
-li.tile .reveal-modal a.close-reveal-modal {
+/* line 230, ../scss/app.scss */
+.reveal-modal a.close-reveal-modal {
   color: #ccc;
   position: fixed;
   left: 30px;
 }
-/* line 233, ../scss/app.scss */
-li.tile .reveal-modal a.close-reveal-modal h5 {
+/* line 234, ../scss/app.scss */
+.reveal-modal a.close-reveal-modal h5 {
   color: #ccc;
   margin: 0;
 }
-/* line 238, ../scss/app.scss */
-li.tile .reveal-modal a.close-reveal-modal:hover, li.tile .reveal-modal a.close-reveal-modal:active {
+/* line 239, ../scss/app.scss */
+.reveal-modal a.close-reveal-modal:hover, .reveal-modal a.close-reveal-modal:active {
   color: white;
 }
-/* line 240, ../scss/app.scss */
-li.tile .reveal-modal a.close-reveal-modal:hover h5, li.tile .reveal-modal a.close-reveal-modal:active h5 {
+/* line 241, ../scss/app.scss */
+.reveal-modal a.close-reveal-modal:hover h5, .reveal-modal a.close-reveal-modal:active h5 {
   color: white !important;
 }
 
