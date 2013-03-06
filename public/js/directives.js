@@ -12,6 +12,7 @@ angular.module('myApp.directives', []).
 
 myApp.directive('startAnimation', function(){
   return function(){
+    $('.tile-group a').removeAttr('href');
     // $('li.tile').hide();
 		$('li.tile').css('opacity', '0');
 		$('li.tile').css('margin-left', '-20px');
