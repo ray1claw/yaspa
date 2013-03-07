@@ -25,5 +25,6 @@ myApp.directive('startAnimation', function(){
     });
 	});
   $('body').css('width', '5000px');
+  
   }	
 });

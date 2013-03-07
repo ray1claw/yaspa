@@ -1,15 +1,16 @@
 .page-region(start-animation, ng-controller="YaspaTiles")
       .page-region-content
         ul.tile-group(ng-repeat="tile in tiles")
-          li(class="tile {{tile.sizeclass}} {{tile.colorclass}}")
+          li(class="tile {{tile.class.size}} {{tile.class.color}}")
             a.tile-content(href='#', data-reveal-id='myModal')
+              img(ng-show="tile.image.show", class="{{tile.image.class}}", src='{{tile.image.src}}')
               h2 {{tile.smallheading}}
               h5 {{tile.subtitle}}
               p
                 {{tile.content}}
               .brand
                 i(class="{{tile.icon}}")
-                .badge {{tile.badge}}
+                .badge(class="{{tile.badge.class}}") {{tile.badge.value}}
             
 
           li.tile.bg-color-blue.icon

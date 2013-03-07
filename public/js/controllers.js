@@ -28,9 +28,19 @@ myApp.controller('YaspaTiles', function($scope, $location, $http) {
      "subtitle": "Fast just got faster with Nexus S.",
      "content": "This is demo content",
      "icon": "foundicon-mail",
-     "badge": "12",
-     "sizeclass": "double",
-     "colorclass": "bg-color-green"
+     "badge": {
+     	"value": 12,
+     	"class": ""
+     },
+     "class": {
+     	"size": "double",
+        "color": "bg-color-green"
+     },
+     "image": {
+     	"show": 1,
+     	"src": "img/demos/demo4.png",
+     	"class": "place-right"
+     }
     },
     {
      "name": "Motorola XOOM™ with Wi-Fi",
