@@ -10,7 +10,7 @@ angular.module('myApp.directives', []).
     };
   }]);
 
-myApp.directive('startAnimation', function(){
+myApp.directive('yBoot', function(){
   return function(){
     // Remove link from a.
     $('.tile-group a').removeAttr('href');
@@ -25,6 +25,35 @@ myApp.directive('startAnimation', function(){
     });
 	});
   $('body').css('width', '5000px');
-  
   }	
+});
+
+myApp.directive('yTiles', function($compile) {
+    return {
+        restrict: 'E',
+        compile: function(element, attrs) {
+
+          var html = '';
+          html += '<li ng-repeat="tile in tiles" class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}">';
+          html += '<a href="#" data-reveal-id="myModal" class="tile-content">';
+          html += '<img ng-show="tile.image.show", class="{{tile.image.class}}", src="{{tile.image.src}}">';
+          html += '<h2>{{tile.smallheading}}</h2>';
+          html += '<h5>{{tile.subtitle}}</h5>';
+          html += '<i class="{{tile.bigicon}}"></i>';
+          html += '<div class="brand">';
+          html += '<i class="{{tile.smallicon}}"></i>';
+          html += '<div class="badge {{tile.badge.class}}">{{tile.badge.value}}</div>';
+          html += '<div class="name">{{tile.name}}</div>';
+          html += '</div>';
+          html += '</a>';
+          html += '</li>';
+
+            var input = angular.element(html);
+            return function(scope, element, attrs) {
+                element.append(input);
+                var templateFn = $compile(input);
+                templateFn(scope);
+            }
+        }
+    }
 });
