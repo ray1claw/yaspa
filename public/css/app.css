@@ -5726,9 +5726,30 @@ body .page-region .page-region-content ul.tile-group {
   display: inline-block;
   float: left;
   margin-left: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
 }
 
-/* line 87, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
+ul.ui-animate {
+  opacity: 0;
+}
+
+/* line 95, ../scss/app.scss */
 li.tile {
   list-style: none;
   display: block;
@@ -5738,20 +5759,33 @@ li.tile {
   float: left;
   background: #525252;
   box-shadow: inset 0px 0px 1px #ffffcc;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  opacity: 1;
 }
-/* line 101, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 li.tile:hover, li.tile:active {
   outline: 3px white solid;
 }
-/* line 106, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 li.tile.double {
   width: 310px;
 }
-/* line 109, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 li.tile.double-vertical {
   height: 310px;
 }
-/* line 114, ../scss/app.scss */
+/* line 123, ../scss/app.scss */
 li.tile.icon a.tile-content i {
   position: absolute;
   font-size: 64px;
@@ -5761,16 +5795,16 @@ li.tile.icon a.tile-content i {
   margin-left: -32px;
   margin-top: -52px;
 }
-/* line 126, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 li.tile.image a.tile-content {
   padding: 0;
 }
-/* line 128, ../scss/app.scss */
+/* line 137, ../scss/app.scss */
 li.tile.image a.tile-content img {
   width: 100%;
   height: 100%;
 }
-/* line 135, ../scss/app.scss */
+/* line 144, ../scss/app.scss */
 li.tile a.tile-content {
   display: block;
   width: 100%;
@@ -5781,28 +5815,28 @@ li.tile a.tile-content {
   color: #ffffff;
   font-size: 74%;
 }
-/* line 145, ../scss/app.scss */
+/* line 154, ../scss/app.scss */
 li.tile a.tile-content h1, li.tile a.tile-content h2, li.tile a.tile-content h3, li.tile a.tile-content h4, li.tile a.tile-content h5, li.tile a.tile-content p {
   margin: 0;
   padding: 0;
   color: #ffffff;
 }
-/* line 151, ../scss/app.scss */
+/* line 160, ../scss/app.scss */
 li.tile a.tile-content h4, li.tile a.tile-content h5 {
   font-weight: 700;
 }
-/* line 155, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 li.tile a.tile-content p {
   overflow: hidden;
   text-overflow: ellipsis;
   height: 60px;
 }
-/* line 161, ../scss/app.scss */
+/* line 170, ../scss/app.scss */
 li.tile a.tile-content img {
   width: 80px;
   height: 80px;
 }
-/* line 169, ../scss/app.scss */
+/* line 178, ../scss/app.scss */
 li.tile a.tile-content .brand {
   position: absolute;
   min-height: 30px;
@@ -5810,7 +5844,7 @@ li.tile a.tile-content .brand {
   bottom: 0;
   right: 0;
 }
-/* line 176, ../scss/app.scss */
+/* line 185, ../scss/app.scss */
 li.tile a.tile-content .brand .name {
   font-size: 16px;
   font-weight: 400;
@@ -5821,7 +5855,7 @@ li.tile a.tile-content .brand .name {
   margin-bottom: 5px;
   margin-left: 15px;
 }
-/* line 187, ../scss/app.scss */
+/* line 196, ../scss/app.scss */
 li.tile a.tile-content .brand .text {
   position: absolute;
   left: 60px;
@@ -5831,7 +5865,7 @@ li.tile a.tile-content .brand .text {
   font-size: 12px;
   line-height: 14px;
 }
-/* line 197, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 li.tile a.tile-content .brand .badge {
   position: absolute;
   bottom: 0;
@@ -5843,13 +5877,13 @@ li.tile a.tile-content .brand .badge {
   font-size: 16px;
   padding-top: 4px;
 }
-/* line 209, ../scss/app.scss */
+/* line 218, ../scss/app.scss */
 li.tile a.tile-content .brand i {
   margin: 5px 15px;
   font-size: 28px;
 }
 
-/* line 218, ../scss/app.scss */
+/* line 227, ../scss/app.scss */
 .reveal-modal {
   position: fixed;
   top: 0 !important;
@@ -5860,45 +5894,45 @@ li.tile a.tile-content .brand i {
   box-shadow: none;
   border: none;
 }
-/* line 227, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 .reveal-modal .modal-content {
   margin-top: 60px;
 }
-/* line 230, ../scss/app.scss */
+/* line 239, ../scss/app.scss */
 .reveal-modal a.close-reveal-modal {
   color: #ccc;
   position: fixed;
   left: 30px;
 }
-/* line 234, ../scss/app.scss */
+/* line 243, ../scss/app.scss */
 .reveal-modal a.close-reveal-modal h5 {
   color: #ccc;
   margin: 0;
 }
-/* line 239, ../scss/app.scss */
+/* line 248, ../scss/app.scss */
 .reveal-modal a.close-reveal-modal:hover, .reveal-modal a.close-reveal-modal:active {
   color: white;
 }
-/* line 241, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 .reveal-modal a.close-reveal-modal:hover h5, .reveal-modal a.close-reveal-modal:active h5 {
   color: white !important;
 }
 
 @media (max-width: 767px) {
-  /* line 249, ../scss/app.scss */
+  /* line 258, ../scss/app.scss */
   li.tile {
     height: 120px;
     width: 120px;
   }
-  /* line 252, ../scss/app.scss */
+  /* line 261, ../scss/app.scss */
   li.tile.double {
     width: 250px;
   }
-  /* line 255, ../scss/app.scss */
+  /* line 264, ../scss/app.scss */
   li.tile.double-vertical {
     height: 250px;
   }
-  /* line 260, ../scss/app.scss */
+  /* line 269, ../scss/app.scss */
   li.tile.icon a.tile-content i {
     font-size: 48px;
     width: 48px;
@@ -5907,43 +5941,43 @@ li.tile a.tile-content .brand i {
     margin-left: -24px;
     margin-top: -38px;
   }
-  /* line 270, ../scss/app.scss */
+  /* line 279, ../scss/app.scss */
   li.tile a.tile-content {
     padding: 5px 10px;
     font-size: 70%;
   }
-  /* line 274, ../scss/app.scss */
+  /* line 283, ../scss/app.scss */
   li.tile a.tile-content .brand .badge {
     width: 26px;
     height: 28px;
     font-size: 12px;
     right: 0;
   }
-  /* line 280, ../scss/app.scss */
+  /* line 289, ../scss/app.scss */
   li.tile a.tile-content .brand .name {
     font-size: 12px;
     margin-left: 10px;
   }
-  /* line 284, ../scss/app.scss */
+  /* line 293, ../scss/app.scss */
   li.tile a.tile-content .brand .text {
     left: 40px;
     right: 40px;
     font-size: 11px;
   }
-  /* line 289, ../scss/app.scss */
+  /* line 298, ../scss/app.scss */
   li.tile a.tile-content .brand i {
     font-size: 24px;
     margin: 5px 10px;
   }
 }
 @media (max-height: 870px) {
-  /* line 299, ../scss/app.scss */
+  /* line 308, ../scss/app.scss */
   .page-header-content {
     margin-top: 20px !important;
     margin-left: 70px !important;
   }
 
-  /* line 303, ../scss/app.scss */
+  /* line 312, ../scss/app.scss */
   ul.tile-group {
     margin-top: 0 !important;
     margin-left: 20px !important;
@@ -5951,20 +5985,20 @@ li.tile a.tile-content .brand i {
   }
 }
 @media (max-height: 630px) {
-  /* line 312, ../scss/app.scss */
+  /* line 321, ../scss/app.scss */
   .page-region-content {
     margin-top: 10px !important;
     margin-left: 10px !important;
   }
 
-  /* line 316, ../scss/app.scss */
+  /* line 325, ../scss/app.scss */
   ul.tile-group {
     margin-top: 0 !important;
     margin-left: 20px !important;
     width: 1440px !important;
   }
 }
-/* line 324, ../scss/app.scss */
+/* line 333, ../scss/app.scss */
 .place-right {
   float: right;
   margin-left: 10px;

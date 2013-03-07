@@ -16,8 +16,7 @@ function MyCtrl1() {}
 MyCtrl1.$inject = [];
 
 
-function MyCtrl2() {
-}
+function MyCtrl2() {}
 MyCtrl2.$inject = [];
 
 
@@ -34,6 +33,10 @@ myApp.controller('YaspaTiles', function($scope, $location, $http) {
     },
     {
      "name": "Motorola XOOM™ with Wi-Fi",
+     "snippet": "The Next, Next Generation tablet."
+    },
+    {
+     "name": "MOTOROLA XOOM™",
      "snippet": "The Next, Next Generation tablet."
     },
     {
