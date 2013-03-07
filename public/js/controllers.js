@@ -23,25 +23,71 @@ MyCtrl2.$inject = [];
 myApp.controller('YaspaTiles', function($scope, $location, $http) {
   $scope.tiles = [
     {
+
+     "type": "text",
      "smallheading": "Nexus S",
      "subtitle": "Fast just got faster with Nexus S.",
      "content": "This is demo content",
-     "icon": "foundicon-mail",
-     "badge": "12",
-     "sizeclass": "double",
-     "colorclass": "bg-color-green"
+     "bigicon": "",
+     "smallicon": "foundicon-mail",
+     "name": "",
+     "badge": {
+     	"value": 12,
+     	"class": ""
+     },
+     "class": {
+     	"size": "double",
+        "color": "bg-color-green"
+     },
+     "image": {
+     	"show": 1,
+     	"src": "img/demos/demo4.png",
+     	"class": "place-right"
+     }
     },
     {
-     "name": "Motorola XOOM™ with Wi-Fi",
-     "snippet": "The Next, Next Generation tablet."
+     "type": "icon",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-smiley",
+     "smallicon": "",
+     "name": "Icon",
+     "badge": {
+     	"value": "",
+     	"class": ""
+     },
+     "class": {
+     	"size": "",
+        "color": "bg-color-blue"
+     },
+     "image": {
+     	"show": 0,
+     	"src": "",
+     	"class": ""
+     }
     },
     {
-     "name": "MOTOROLA XOOM™",
-     "snippet": "The Next, Next Generation tablet."
-    },
-    {
-     "name": "MOTOROLA XOOM™",
-     "snippet": "The Next, Next Generation tablet."
+     "type": "image",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-smiley",
+     "smallicon": "",
+     "name": "Image",
+     "badge": {
+     	"value": "5",
+     	"class": "bg-color-orangeDark"
+     },
+     "class": {
+     	"size": "",
+        "color": "bg-color-red"
+     },
+     "image": {
+     	"show": 1,
+     	"src": "img/demos/demo1.png",
+     	"class": ""
+     }
     }
   ];
 });
