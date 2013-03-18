@@ -15,16 +15,17 @@ myApp.directive('yBoot', function(){
     // Remove link from a.
     $('.tile-group a').removeAttr('href');
     // Add animation.
-    $('.page-header-content').css('opacity', '0');
-		$('li.tile').css('opacity', '0');
-		$('li.tile').css('margin-left', '-20px');
-    $('.page-header-content').delay(200).animate({'opacity': '+=1'});
-    $('ul.tile-group li').each(function(index) {
-    	var stallFor = 75 * parseInt(index);
-      $(this).delay(stallFor).animate({ 'opacity': '+=1', 'margin-left':'+=20px'}, function () {
-    });
-	});
-  $('body').css('width', '5000px');
+  //   $('.page-header-content').css('opacity', '0');
+		// $('li.tile').css('opacity', '0');
+		// $('li.tile').css('margin-left', '-20px');
+  //   $('.page-header-content').delay(200).animate({'opacity': '+=1'});
+  //   $('ul.tile-group li.tile').each(function(index) {
+  //   	var stallFor = 75 * parseInt(index);
+  //     $(this).delay(stallFor).animate({ 'opacity': '+=1', 'margin-left':'+=20px'}, function () {
+
+  //     });
+  //   });
+    $('body').css('width', '5000px');
   }	
 });
 
@@ -36,6 +37,7 @@ myApp.directive('yTiles', function($compile) {
           html += '<li ng-repeat="tile in tiles" class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}">';
           html += '<a data-reveal-id="yaspaModal" class="tile-content">';
           html += '<img ng-show="tile.image.show" class="{{tile.image.class}}" src="{{tile.image.src}}">';
+          html += '<video ng-show="tile.image.show" class="{{tile.image.class}}" autoplay loop><source src="img/demos/mov_bbb.ogg" type="video/ogg"></video>';
           html += '<h2>{{tile.smallheading}}</h2>';
           html += '<h5>{{tile.subtitle}}</h5>';
           html += '<h4>{{tile.h4title}}</h4>';
