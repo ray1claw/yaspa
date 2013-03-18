@@ -14,6 +14,7 @@ myApp.directive('yBoot', function(){
   return function(){
     // Remove link from a.
     $('.tile-group a').removeAttr('href');
+    
     // Add animation.
   //   $('.page-header-content').css('opacity', '0');
 		// $('li.tile').css('opacity', '0');
