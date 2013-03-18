@@ -5696,9 +5696,9 @@ table tfoot tr td {
 
 /* line 54, ../scss/app.scss */
 body {
-  background: url("../img/drawing.png") #13492c;
+  background: url("../img/drawing.png") repeat-x #13492c;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   color: white;
 }
 /* line 60, ../scss/app.scss */
