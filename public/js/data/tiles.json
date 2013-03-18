@@ -130,11 +130,11 @@
      "content": "",
      "bigicon": "",
      "smallicon": "",
-     "name": "",
+     "name": "Video",
      "badge": {
-        "show": 0,
-        "value": "3",
-        "class": "bg-color-orange"
+        "show": 1,
+        "value": "1",
+        "class": "bg-color-blue"
      },
      "class": {
         "size": "",
@@ -161,13 +161,13 @@
     {
      "id": 6,
      "type": "text",
-     "h4title": "Title",
+     "h4title": "Fotuzlab stream",
      "smallheading": "",
      "subtitle": "",
-     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh .",
+     "content": "Xpressions of Experiments over Xperience",
      "bigicon": "",
      "smallicon": "",
-     "name": "Tweet @ray1claw",
+     "name": "Tweet @fotuzlab",
      "badge": {
         "show": 0,
         "value": "3",
