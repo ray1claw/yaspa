@@ -1,5 +1,4 @@
-.page-region(y-boot, ng-controller="YaspaTiles")
+.page-region(y-boot)
       .page-region-content
         ul.tile-group
-          li(ng-repeat="tile in tiles", class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}", ui-animate)
-            y-tiles
+          y-tiles(ng-controller="YaspaTiles")

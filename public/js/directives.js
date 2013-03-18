@@ -33,21 +33,35 @@ myApp.directive('yTiles', function($compile) {
     return {
         restrict: 'E',
         compile: function(element, attrs) {
-
           var html = '';
-          // html += '<li ng-repeat="tile in tiles" class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}" ui-animate="ui-animate">';
-          html += '<a href="#" data-reveal-id="myModal" class="tile-content">';
-          html += '<img ng-show="tile.image.show", class="{{tile.image.class}}", src="{{tile.image.src}}">';
+          html += '<li ng-repeat="tile in tiles" class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}">';
+          html += '<a data-reveal-id="yaspaModal" class="tile-content">';
+          html += '<img ng-show="tile.image.show" class="{{tile.image.class}}" src="{{tile.image.src}}">';
           html += '<h2>{{tile.smallheading}}</h2>';
           html += '<h5>{{tile.subtitle}}</h5>';
+          html += '<h4>{{tile.h4title}}</h4>';
+          html += '<p>{{tile.content}}</p>';
           html += '<i class="{{tile.bigicon}}"></i>';
-          html += '<div class="brand">';
+          html += '<div class="brand {{tile.brand}}">';
           html += '<i class="{{tile.smallicon}}"></i>';
-          html += '<div class="badge {{tile.badge.class}}">{{tile.badge.value}}</div>';
+          html += '<p class="text">{{tile.badge.text}}</p>';
+          html += '<div ng-show="tile.badge.show" class="badge {{tile.badge.class}}">{{tile.badge.value}}</div>';
           html += '<div class="name">{{tile.name}}</div>';
           html += '</div>';
           html += '</a>';
-          // html += '</li>';
+          html += '</li>';
+          html += '<div id="yaspaModal" class="reveal-modal bg-color-red" style="top: 0px; opacity: 1; visibility: hidden; display: none;">';
+          html += '<div class="row modal-content">';
+          html += '<h2>Title</h2>';
+          html += '<p class="lead">Subtitle</p>';
+          html += '<p>Content</p>';
+          html += '</div>';
+          html += '<a class="close-reveal-modal">';
+          html += '<i class="foundicon-left-arrow">';
+          html += '</i>';
+          html += '<h5>back</h5>';
+          html += '</a>';
+          html += '</div>';
 
             var input = angular.element(html);
             return function(scope, element, attrs) {
