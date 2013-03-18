@@ -34,8 +34,9 @@ myApp.directive('yTiles', function($compile) {
         compile: function(element, attrs) {
           var html = '';
           html += '<li ng-repeat="tile in tiles" class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}">';
-          html += '<a data-reveal-id="yaspaModal" class="tile-content">';
+          html += '<a ng-click="ymodal(tile)" data-reveal-id="myModal" class="tile-content">';
           html += '<img ng-show="tile.image.show" class="{{tile.image.class}}" src="{{tile.image.src}}">';
+          html += '<video height="{{tile.video.height}}" width="{{tile.video.width}}" ng-show="tile.video.show" class="{{tile.image.class}}" autoplay loop><source src="{{tile.video.src}}" type="video/ogg"></video>';
           html += '<h2>{{tile.smallheading}}</h2>';
           html += '<h5>{{tile.subtitle}}</h5>';
           html += '<h4>{{tile.h4title}}</h4>';
@@ -49,7 +50,7 @@ myApp.directive('yTiles', function($compile) {
           html += '</div>';
           html += '</a>';
           html += '</li>';
-          html += '<div id="yaspaModal" class="reveal-modal bg-color-red" style="top: 0px; opacity: 1; visibility: hidden; display: none;">';
+          html += '<div id="myModal" class="reveal-modal bg-color-red" style="top: 0px; opacity: 1; visibility: hidden; display: none;">';
           html += '<div class="row modal-content">';
           html += '<h2>Title</h2>';
           html += '<p class="lead">Subtitle</p>';

@@ -123,14 +123,14 @@
     },
     {
      "id": 5,
-     "type": "icon",
+     "type": "video",
      "h4title": "",
      "smallheading": "",
      "subtitle": "",
      "content": "",
-     "bigicon": "foundicon-cloud",
+     "bigicon": "",
      "smallicon": "",
-     "name": "Icon",
+     "name": "",
      "badge": {
         "show": 0,
         "value": "3",
@@ -144,6 +144,13 @@
         "show": 0,
         "src": "img/demos/demo3.png",
         "class": ""
+     },
+     "video": {
+        "show": 1,
+        "src": "img/demos/mov_bbb.ogg",
+        "class": "",
+        "height": "100%",
+        "width": ""
      },
      "modal": {
         "title": "title3",
