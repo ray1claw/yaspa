@@ -35,7 +35,7 @@ myApp.directive('yTiles', function($compile) {
         compile: function(element, attrs) {
 
           var html = '';
-          html += '<li ng-repeat="tile in tiles" class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}">';
+          // html += '<li ng-repeat="tile in tiles" class="tile {{tile.class.size}} {{tile.class.color}} {{tile.type}}" ui-animate="ui-animate">';
           html += '<a href="#" data-reveal-id="myModal" class="tile-content">';
           html += '<img ng-show="tile.image.show", class="{{tile.image.class}}", src="{{tile.image.src}}">';
           html += '<h2>{{tile.smallheading}}</h2>';
@@ -47,7 +47,7 @@ myApp.directive('yTiles', function($compile) {
           html += '<div class="name">{{tile.name}}</div>';
           html += '</div>';
           html += '</a>';
-          html += '</li>';
+          // html += '</li>';
 
             var input = angular.element(html);
             return function(scope, element, attrs) {
