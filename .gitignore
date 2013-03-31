@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #################
 ## Eclipse
 #################
@@ -161,3 +162,9 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+=======
+.DS_Store
+.tags
+logs
+node_modules
+>>>>>>> ed1b9e343615bb9eac7f50f5693ad82fdfee967b

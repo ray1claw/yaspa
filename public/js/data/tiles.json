@@ -1,0 +1,341 @@
+[
+    {
+     "id": 1,
+     "type": "text",
+     "h4title": "",
+     "smallheading": "Mail",
+     "subtitle": "arijit@srijan.in",
+     "content": "You got new mail notifications.",
+     "bigicon": "",
+     "smallicon": "foundicon-mail",
+     "name": "",
+     "badge": {
+        "show": 1,
+        "value": 12,
+        "class": ""
+     },
+     "class": {
+        "size": "double",
+        "color": "bg-color-green"
+     },
+     "image": {
+        "show": 0,
+        "src": "img/demos/demo4.png",
+        "class": "place-right"
+     },
+     "modal": {
+        "title": "title1",
+        "lead": "lead1",
+        "content": "content1"
+     }
+    },
+    {
+     "id": 2,
+     "type": "icon",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-smiley",
+     "smallicon": "",
+     "name": "Icon",
+     "badge": {
+        "show": 0,
+        "value": "",
+        "class": ""
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-blue"
+     },
+     "image": {
+        "show": 0,
+        "src": "",
+        "class": ""
+     },
+     "modal": {
+        "title": "title2",
+        "lead": "lead2",
+        "content": "content2"
+     }
+    },
+    {
+     "id": 3,
+     "type": "image",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "",
+     "smallicon": "",
+     "name": "",
+     "badge": {
+        "show": 1,
+        "value": "5",
+        "class": "bg-color-orangeDark"
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-red"
+     },
+     "image": {
+        "show": 1,
+        "src": "img/demos/demo1.png",
+        "class": ""
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    },
+    {
+     "id": 4,
+     "type": "image",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "",
+     "smallicon": "foundicon-globe",
+     "name": "",
+     "brand": "bg-color-orange",
+     "badge": {
+        "show": 1,
+        "value": "3",
+        "class": "bg-color-orange",
+        "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate."
+     },
+     "class": {
+        "size": "double",
+        "color": "bg-color-red"
+     },
+     "image": {
+        "show": 1,
+        "src": "img/demos/demo3.png",
+        "class": ""
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    },
+    {
+     "id": 5,
+     "type": "video",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "",
+     "smallicon": "",
+     "name": "Video",
+     "badge": {
+        "show": 1,
+        "value": "1",
+        "class": "bg-color-blue"
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-yellow"
+     },
+     "image": {
+        "show": 0,
+        "src": "img/demos/demo3.png",
+        "class": ""
+     },
+     "video": {
+        "show": 1,
+        "src": "img/demos/mov_bbb.ogg",
+        "class": "",
+        "height": "100%",
+        "width": ""
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    },
+    {
+     "id": 6,
+     "type": "text",
+     "h4title": "Fotuzlab stream",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "Xpressions of Experiments over Xperience",
+     "bigicon": "",
+     "smallicon": "",
+     "name": "Tweet @fotuzlab",
+     "badge": {
+        "show": 0,
+        "value": "3",
+        "class": "bg-color-orange"
+     },
+     "class": {
+        "size": "double",
+        "color": "bg-color-red"
+     },
+     "image": {
+        "show": 1,
+        "src": "img/demos/demo4.png",
+        "class": "place-right"
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    },
+    {
+     "id": 7,
+     "type": "icon",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-settings",
+     "smallicon": "",
+     "name": "Icon",
+     "badge": {
+        "show": 0,
+        "value": "3",
+        "class": "bg-color-orange"
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-pink"
+     },
+     "image": {
+        "show": 0,
+        "src": "img/demos/demo4.png",
+        "class": "place-right"
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    },
+    {
+     "id": 8,
+     "type": "icon",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-trash",
+     "smallicon": "",
+     "name": "Icon",
+     "badge": {
+        "show": 0,
+        "value": "3",
+        "class": "bg-color-orange"
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-greenLight"
+     },
+     "image": {
+        "show": 0,
+        "src": "img/demos/demo4.png",
+        "class": "place-right"
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    },
+    {
+     "id": 9,
+     "type": "icon",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-lock",
+     "smallicon": "",
+     "name": "Icon",
+     "badge": {
+        "show": 0,
+        "value": "3",
+        "class": "bg-color-orange"
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-blueDark"
+     },
+     "image": {
+        "show": 0,
+        "src": "img/demos/demo4.png",
+        "class": "place-right"
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    },
+    {
+     "id": 10,
+     "type": "icon",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-location",
+     "smallicon": "",
+     "name": "Icon",
+     "badge": {
+        "show": 0,
+        "value": "3",
+        "class": "bg-color-orange"
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-orangeDark"
+     },
+     "image": {
+        "show": 0,
+        "src": "img/demos/demo4.png",
+        "class": "place-right"
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+     },
+     {
+     "id": 11,
+     "type": "icon",
+     "h4title": "",
+     "smallheading": "",
+     "subtitle": "",
+     "content": "",
+     "bigicon": "foundicon-clock",
+     "smallicon": "",
+     "name": "Icon",
+     "badge": {
+        "show": 0,
+        "value": "3",
+        "class": "bg-color-orange"
+     },
+     "class": {
+        "size": "",
+        "color": "bg-color-yellow"
+     },
+     "image": {
+        "show": 0,
+        "src": "img/demos/demo4.png",
+        "class": "place-right"
+     },
+     "modal": {
+        "title": "title3",
+        "lead": "lead3",
+        "content": "content3"
+     }
+    }
+  ]

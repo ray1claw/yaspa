@@ -16,6 +16,17 @@ function MyCtrl1() {}
 MyCtrl1.$inject = [];
 
 
-function MyCtrl2() {
-}
+function MyCtrl2() {}
 MyCtrl2.$inject = [];
+
+
+myApp.controller('YaspaTiles', function($scope, $location, $http) {
+  $http.get("js/data/tiles.json").success(function(data){
+  $scope.tiles = data;
+ // $scope.mdata = data[1].modal;
+  $scope.ymodal = function(tile){
+  	console.log(tile.modal.title);
+	$scope.mdata = tile.modal.title;
+  }
+  });
+});
